@@ -1,0 +1,26 @@
+<p>This is lazy loaded module</p>
+<h2>This module only load from server if CanLoad guard approve route.</h2>
+<button (click)="logout()">LOGOUT</button>
+<br />
+<br /><br />
+<button [routerLink]="['/homepage2/add']" routerLinkActive="router-link-active">
+  Add product
+</button>
+|
+<button
+  [routerLink]="['/homepage2/edit/2']"
+  routerLinkActive="router-link-active"
+>
+  edit product
+</button>
+|
+<button
+  [routerLink]="['/homepage2/view/2']"
+  routerLinkActive="router-link-active"
+>
+  view product
+</button>
+<h2>
+    All the other route from now are disable until you accept the prompt <br>
+    These happens because of canDeactivate guards
+</h2>

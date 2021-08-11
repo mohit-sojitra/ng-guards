@@ -1,0 +1,12 @@
+<div class="container">
+  <label for="email">Email:</label>
+  <input type="text" [(ngModel)]="email" name="" />
+  <label for="password">Password:</label>
+  <input type="password" [(ngModel)]="password" name="password" />
+  <small>email : test@test.com</small>
+  <button (click)="canActivateLoginHandler()">
+    Login with canActivated route guard
+  </button>
+  <button (click)="canLoadLoginHandler()">Login with canLoad route guard</button>
+</div>
+<h3>refer console to view which guards have been called</h3>

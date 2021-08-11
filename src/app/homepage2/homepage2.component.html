@@ -1,0 +1,21 @@
+<p>This is protected component</p>
+<h2>
+  This route protected by canActivate guard and this modules loads in any
+  condition even if guards denied
+</h2>
+<button (click)="logout()">LOGOUT</button>
+<br /><br /><br />
+<button [routerLink]="['add']" routerLinkActive="router-link-active">
+  Add product
+</button>
+|
+<button [routerLink]="['edit/2']" routerLinkActive="router-link-active">
+  edit product
+</button>
+|
+<button [routerLink]="['view/2']" routerLinkActive="router-link-active">
+  view product
+</button>
+
+<router-outlet></router-outlet>
+
